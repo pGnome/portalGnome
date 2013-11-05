@@ -67,26 +67,6 @@ var LogInView = Parse.View.extend({
   signUp: function(e) {
     new SignUpView();
     delete self;
-    // var self = this;
-    // var username = this.$("#signup-username").val();
-    // var password = this.$("#signup-password").val();
-
-    // Parse.User.signUp(username, password, { ACL: new Parse.ACL() }, {
-    //   success: function(user) {
-    //     new ManageTodosView();
-    //     self.undelegateEvents();
-    //     delete self;
-    //   },
-
-    //   error: function(user, error) {
-    //     self.$(".signup-form .error").html(error.message).show();
-    //     this.$(".signup-form button").removeAttr("disabled");
-    //   }
-    // });
-
-    // this.$(".signup-form button").attr("disabled", "disabled");
-
-    // return false;
   },
 
   render: function() {
@@ -114,7 +94,7 @@ var SignUpView = Parse.View.extend({
 
     Parse.User.signUp(username, password, { ACL: new Parse.ACL() }, {
       success: function(user) {
-        new ManageTodosView();
+        console.log("signed up")
         self.undelegateEvents();
         delete self;
       },
@@ -149,13 +129,12 @@ var AppView = Parse.View.extend({
   },
 
   render: function() {
-    // if (Parse.User.current()) {
-    //   console.log("Logged In");
-    //   new ManageGardenView();
-    // } else {
-      console.log("NOT Logged In");
+    if (Parse.User.current()) {
+      console.log("Logged In");
+      new ManageGardenView();
+    } else {
       new LogInView();
-    // }
+    }
   }
 });
   new AppView
