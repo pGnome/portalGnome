@@ -97,6 +97,9 @@ var SignUpView = Parse.View.extend({
     Parse.User.signUp(username, password, { ACL: new Parse.ACL() }, {
       success: function(user) {
         console.log("signed up")
+        console.log(user.get("username"));
+        new ManageGardenView();
+
         self.undelegateEvents();
         delete self;
       },
@@ -169,6 +172,9 @@ var ManageGardenView = Parse.View.extend({
     this.$el.html(_.template($("#manageGarden-template").html()));
     this.delegateEvents();
     console.log("ManageGardenView");
+
+
+    $("#header").append(Parse.User.current().get("username"));
 
     //MOISTURE
     $(".dial").knob();
