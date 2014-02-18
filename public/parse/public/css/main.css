@@ -1,0 +1,103 @@
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+html{
+    padding:15px;
+}
+
+   #isWatering{
+    width:400px;
+    height:200px;
+    background-image: url(../img/sprinkler.png) ;
+    background-repeat:no-repeat;
+    background-size:contain;
+    background-position:center;
+
+   }
+
+   .roundabout-holder {
+         list-style: none;
+         padding: 0;
+         margin: 0;
+         height: 5em;
+         width: 5em;
+      }
+      .roundabout-moveable-item {
+         height: 4em;
+         width: 4em;
+         cursor: pointer;
+         background-color: #ccc;
+         border: 1px solid #999;
+      }
+      .roundabout-in-focus {
+         cursor: auto;
+      }
+.center{
+    margin:auto;
+    width:80%;
+
+    display: block;
+}
+
+#moistureButton{
+  float: inline
+}
+
+
+.graph{
+    width:100%;
+    height:50%;
+}
+
+#logout{
+    float:right;
+}
+
+
+#pGnome .content .login {
+    width: 350px;
+    margin: 45px auto 25px auto;
+}
+
+#pGnome .content .login h2 {
+    font-weight: normal;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+#pGnome .content .login input {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 20px;
+    padding: 5px;
+    width: 340px;;
+}
+
+#pGnome .content .login .signup-form {
+    margin-top: 25px;
+}
+
+#pGnome .content .login button {
+    padding: 5px 10px;
+    background: #eee;
+    font-size: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 25px;
+    font-family: "Helvetica Neue";
+}
+
+#pGnome .content .login .error {
+    border: 1px solid red;
+    background: #FDEFF0;
+    padding: 5px 15px;
+    margin-bottom: 15px;
+}
+
+
+
+
+
+

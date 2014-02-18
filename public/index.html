@@ -80,20 +80,27 @@
         </script>
 
         <script type="text/template" id="manageGarden-template">
-          <header id="header"></header>
+          <header id="header">Logged in as: </header>
+
           <button type="button" id="logOut">Log Out</button>
-                 <div class="row">
-                   <div class="col-md-4">          <canvas id="moistureChart" width="400" height="400"></canvas>
-       </div>
-                   <div class="col-md-4">          <div id="currentMoistureLevel">Current Moisture Level: </div>
 
-                 <input type="text" value="75" class="dial">
 
-                 <button type="button" class="btn btn-info" id="setMoistureLevel"> Set </button>
-       </div>
-                   <div class="col-md-4">          <canvas id="barrelWaterLevel" width="400" height="400"></canvas>
-       </div>
-                 </div>
+          <div class="row">
+            <div class="col-md-4">
+              <h3> Charts &#39;n Stuff</h3>
+              <canvas id="moistureChart" width="400" height="400"></canvas>
+            </div>
+          <div class="col-md-4">
+            <h3> Garden Moisture</h3>
+            <div id="currentMoistureLevel">Current Moisture Level: </div>
+            <input type="text" value="75" class="dial">
+            <button type="button" class="btn btn-info" id="setMoistureLevel"> Set </button>
+          </div>
+          <div class="col-md-4">
+            <h3> Barrel Water Level</h3>
+            <canvas id="barrelWaterLevel" width="400" height="400"></canvas>
+          </div>
+          </div>
 
 
 

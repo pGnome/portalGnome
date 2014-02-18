@@ -1,0 +1,14 @@
+{
+    "applications": {
+        "_default": {
+            "link": "pGnome"
+        }, 
+        "pGnome": {
+            "applicationId": "28PBuP52sksBKQskvbMEyny2jVhaECzQ72gyIqsI", 
+            "masterKey": "Yv8m2OUKfxaBYSt63MD3bmf57m3tMCUZ3Tmfjty2"
+        }
+    }, 
+    "global": {
+        "parseVersion": "1.2.16"
+    }
+}
