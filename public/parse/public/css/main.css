@@ -3,17 +3,57 @@
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+html{
+    padding:15px;
+}
 
+   #isWatering{
+    width:400px;
+    height:200px;
+    background-image: url(../img/sprinkler.png) ;
+    background-repeat:no-repeat;
+    background-size:contain;
+    background-position:center;
 
+   }
 
+   .roundabout-holder {
+         list-style: none;
+         padding: 0;
+         margin: 0;
+         height: 5em;
+         width: 5em;
+      }
+      .roundabout-moveable-item {
+         height: 4em;
+         width: 4em;
+         cursor: pointer;
+         background-color: #ccc;
+         border: 1px solid #999;
+      }
+      .roundabout-in-focus {
+         cursor: auto;
+      }
+.center{
+    margin:auto;
+    width:80%;
 
-
+    display: block;
+}
 
 #moistureButton{
   float: inline
 }
 
 
+.graph{
+    width:100%;
+    height:50%;
+}
+
+#logout{
+    float:right;
+}
 
 
 #pGnome .content .login {
