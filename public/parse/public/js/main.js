@@ -404,7 +404,6 @@ var MoistureView = Parse.View.extend({
             $("#zone3").knob();
 
 
-            $('.single-item').slick({touchMove: false, draggable: false});
             // $('.graphs').slick();
 
             moisture();
